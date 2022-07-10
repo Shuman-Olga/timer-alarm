@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./js/main.js"></script>
+    <title>Калькулятр дат</title>
+</head>
+<body>
+    <button class="tabLink" id="tabCalc" name="calculator">Калькулятр дат</button>
+    <button class="tabLink" id="tabTimer" name="timer">Таймер</button>
+    <div id="calculatorContent" class="tabsContent">
+        <h2>Калькулятр дат</h2>
+        <form id='calcDate' action="">
+            <label for="dateFrom">
+                Первая дата:
+                <input type="date" name="dateFrom" >
+            </label>
+            <label for="dateTo">
+                Вторая дата:
+                <input type="date" name="dateTo">
+            </label>
+            <button type="submit">Рассчитать промежуток</button>
+        </form>
+    </div>
+    <div class="tabsContent" id="timerContent">
+        <h2>Таймер</h2>
+        <form name="form_timer" id="timer" >
+                <input type="text" id="time">
+                <button name="start" type="submit" id="btnRun">Старт</button>
+                <button name="stop" type="submit" id="btnStop">Стоп</button>
+                <div id="clockTime"></div>
+        </form>
+    </div>
+    <p id="output"></p>
+    
+</body>
+</html>
